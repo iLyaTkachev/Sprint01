@@ -1,0 +1,303 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0906D6911E7C5AD400A87401 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0906D6901E7C5AD400A87401 /* main.m */; };
+		0906D6941E7C5AD400A87401 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0906D6931E7C5AD400A87401 /* AppDelegate.m */; };
+		0906D69C1E7C5AD500A87401 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0906D69B1E7C5AD500A87401 /* Assets.xcassets */; };
+		0906D6A81E7C73CA00A87401 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0906D6A71E7C73CA00A87401 /* ViewController.m */; };
+		0906D6AB1E7C741100A87401 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0906D6AA1E7C741100A87401 /* TableViewCell.m */; };
+		0906D6AD1E7C742C00A87401 /* Data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0906D6AC1E7C742C00A87401 /* Data.plist */; };
+		098282CC1E7EBF4C00851F35 /* mercedes.png in Resources */ = {isa = PBXBuildFile; fileRef = 098282CB1E7EBF4C00851F35 /* mercedes.png */; };
+		098282D01E7EC07300851F35 /* BMW.png in Resources */ = {isa = PBXBuildFile; fileRef = 098282CF1E7EC07300851F35 /* BMW.png */; };
+		098282D21E7EC23B00851F35 /* Audi.png in Resources */ = {isa = PBXBuildFile; fileRef = 098282D11E7EC23B00851F35 /* Audi.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0906D68C1E7C5AD400A87401 /* Sprint01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sprint01.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0906D6901E7C5AD400A87401 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0906D6921E7C5AD400A87401 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0906D6931E7C5AD400A87401 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0906D69B1E7C5AD500A87401 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0906D6A01E7C5AD500A87401 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0906D6A61E7C73CA00A87401 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0906D6A71E7C73CA00A87401 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0906D6A91E7C741100A87401 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		0906D6AA1E7C741100A87401 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		0906D6AC1E7C742C00A87401 /* Data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Data.plist; sourceTree = "<group>"; };
+		098282CB1E7EBF4C00851F35 /* mercedes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mercedes.png; sourceTree = "<group>"; };
+		098282CF1E7EC07300851F35 /* BMW.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BMW.png; sourceTree = "<group>"; };
+		098282D11E7EC23B00851F35 /* Audi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Audi.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0906D6891E7C5AD400A87401 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0906D6831E7C5AD400A87401 = {
+			isa = PBXGroup;
+			children = (
+				0906D68E1E7C5AD400A87401 /* Sprint01 */,
+				0906D68D1E7C5AD400A87401 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0906D68D1E7C5AD400A87401 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0906D68C1E7C5AD400A87401 /* Sprint01.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0906D68E1E7C5AD400A87401 /* Sprint01 */ = {
+			isa = PBXGroup;
+			children = (
+				0906D6921E7C5AD400A87401 /* AppDelegate.h */,
+				0906D6931E7C5AD400A87401 /* AppDelegate.m */,
+				0906D6A61E7C73CA00A87401 /* ViewController.h */,
+				0906D6A71E7C73CA00A87401 /* ViewController.m */,
+				0906D6A91E7C741100A87401 /* TableViewCell.h */,
+				0906D6AA1E7C741100A87401 /* TableViewCell.m */,
+				0906D69B1E7C5AD500A87401 /* Assets.xcassets */,
+				0906D6A01E7C5AD500A87401 /* Info.plist */,
+				0906D68F1E7C5AD400A87401 /* Supporting Files */,
+				0906D6AC1E7C742C00A87401 /* Data.plist */,
+			);
+			path = Sprint01;
+			sourceTree = "<group>";
+		};
+		0906D68F1E7C5AD400A87401 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				098282CB1E7EBF4C00851F35 /* mercedes.png */,
+				098282CF1E7EC07300851F35 /* BMW.png */,
+				098282D11E7EC23B00851F35 /* Audi.png */,
+				0906D6901E7C5AD400A87401 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0906D68B1E7C5AD400A87401 /* Sprint01 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0906D6A31E7C5AD500A87401 /* Build configuration list for PBXNativeTarget "Sprint01" */;
+			buildPhases = (
+				0906D6881E7C5AD400A87401 /* Sources */,
+				0906D6891E7C5AD400A87401 /* Frameworks */,
+				0906D68A1E7C5AD400A87401 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Sprint01;
+			productName = Sprint01;
+			productReference = 0906D68C1E7C5AD400A87401 /* Sprint01.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0906D6841E7C5AD400A87401 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "iLya Tkachev";
+				TargetAttributes = {
+					0906D68B1E7C5AD400A87401 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+				};
+			};
+			buildConfigurationList = 0906D6871E7C5AD400A87401 /* Build configuration list for PBXProject "Sprint01" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0906D6831E7C5AD400A87401;
+			productRefGroup = 0906D68D1E7C5AD400A87401 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0906D68B1E7C5AD400A87401 /* Sprint01 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0906D68A1E7C5AD400A87401 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				098282D01E7EC07300851F35 /* BMW.png in Resources */,
+				0906D6AD1E7C742C00A87401 /* Data.plist in Resources */,
+				098282D21E7EC23B00851F35 /* Audi.png in Resources */,
+				0906D69C1E7C5AD500A87401 /* Assets.xcassets in Resources */,
+				098282CC1E7EBF4C00851F35 /* mercedes.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0906D6881E7C5AD400A87401 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0906D6A81E7C73CA00A87401 /* ViewController.m in Sources */,
+				0906D6AB1E7C741100A87401 /* TableViewCell.m in Sources */,
+				0906D6941E7C5AD400A87401 /* AppDelegate.m in Sources */,
+				0906D6911E7C5AD400A87401 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0906D6A11E7C5AD500A87401 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0906D6A21E7C5AD500A87401 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0906D6A41E7C5AD500A87401 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				INFOPLIST_FILE = Sprint01/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = iLyaTkachev.Sprint01;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0906D6A51E7C5AD500A87401 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				INFOPLIST_FILE = Sprint01/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = iLyaTkachev.Sprint01;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0906D6871E7C5AD400A87401 /* Build configuration list for PBXProject "Sprint01" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0906D6A11E7C5AD500A87401 /* Debug */,
+				0906D6A21E7C5AD500A87401 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0906D6A31E7C5AD500A87401 /* Build configuration list for PBXNativeTarget "Sprint01" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0906D6A41E7C5AD500A87401 /* Debug */,
+				0906D6A51E7C5AD500A87401 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0906D6841E7C5AD400A87401 /* Project object */;
+}
