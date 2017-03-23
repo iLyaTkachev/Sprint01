@@ -19,11 +19,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    _myTableView = [self makeTableView];
-    [self.view addSubview:_myTableView];
+    self.myTableView = [[self makeTableView]autorelease];
+    [self.view addSubview:self.myTableView];
     NSString *path = [[NSBundle mainBundle] pathForResource:@"Data" ofType:@"plist"];
-    _dataArray = [[NSMutableArray alloc] initWithContentsOfFile:path];
-    //[path release];
+    self.dataArray = [[NSMutableArray alloc] initWithContentsOfFile:path];
 }
 
 -(UITableView *)makeTableView
@@ -34,7 +33,7 @@
     CGFloat height = self.view.frame.size.height-50;
     CGRect tableFrame = CGRectMake(x, y, width, height);
     
-    UITableView *tableView = [[UITableView alloc]initWithFrame:tableFrame style:UITableViewStylePlain];
+    UITableView *tableView = [[[UITableView alloc]initWithFrame:tableFrame style:UITableViewStylePlain]autorelease];
     
     tableView.rowHeight = 50;
     tableView.scrollEnabled = YES;
@@ -55,21 +54,25 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [_dataArray count];
+    return [self.dataArray count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    TableViewCell *cell = [[[TableViewCell alloc]initCell]autorelease];
+    static NSString *CellIdentifier = @"Cell";
+    TableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    if (cell == nil) {
+        cell = [[[TableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+    }
     cell.myTitleLabel.text=[[_dataArray objectAtIndex:indexPath.row] objectForKey:@"title"];
     cell.mySubtitleLabel.text=[[_dataArray objectAtIndex:indexPath.row] objectForKey:@"subtitle"];
     cell.myImageView.image = [UIImage imageNamed:[[_dataArray objectAtIndex:indexPath.row] objectForKey:@"image_name"]];
     return cell;
 }
 -(void) dealloc{
+    [self.dataArray release];
+    [self.myTableView release];
     [super dealloc];
-    [_dataArray release];
-    [_myTableView release];
 }
 /*
 #pragma mark - Navigation

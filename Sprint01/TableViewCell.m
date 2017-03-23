@@ -10,21 +10,25 @@
 
 @implementation TableViewCell
 
--(id)initCell
+-(instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
-    self=[super init];
-    if(self)
-    {
-        _myTitleLabel=[[UILabel alloc]initWithFrame:CGRectMake(100.0f, 0.0f, 200.0f, 25.0f)];
-        _mySubtitleLabel=[[UILabel alloc]initWithFrame:CGRectMake(100.0f, 25.0f, 200.0f, 25.0f)];
-        _myImageView=[[UIImageView alloc] initWithFrame:CGRectMake(25.0f,1.0f, 48.0f, 48.0f)];
-        [_mySubtitleLabel setTextColor:[UIColor grayColor]];
-        [self addSubview:_myTitleLabel];
-        [self addSubview:_mySubtitleLabel];
-        [self addSubview:_myImageView];
+    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
+    
+    if (self){
+        [self initCell];
     }
     
     return self;
+}
+-(void)initCell
+{
+        self.myTitleLabel=[[UILabel alloc]initWithFrame:CGRectMake(100.0f, 0.0f, 200.0f, 25.0f)];
+        self.mySubtitleLabel=[[UILabel alloc]initWithFrame:CGRectMake(100.0f, 25.0f, 200.0f, 25.0f)];
+        self.myImageView=[[UIImageView alloc] initWithFrame:CGRectMake(25.0f,1.0f, 48.0f, 48.0f)];
+        [self.mySubtitleLabel setTextColor:[UIColor grayColor]];
+        [self addSubview:self.myTitleLabel];
+        [self addSubview:self.mySubtitleLabel];
+        [self addSubview:self.myImageView];
 }
 
 - (void)awakeFromNib {
@@ -37,10 +41,10 @@
     // Configure the view for the selected state
 }
 -(void) dealloc{
+    [self.myTitleLabel release];
+    [self.mySubtitleLabel release];
+    [self.myImageView release];
     [super dealloc];
-    [_myTitleLabel release];
-    [_mySubtitleLabel release];
-    [_myImageView release];
 }
 
 @end

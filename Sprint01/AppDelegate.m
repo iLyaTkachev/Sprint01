@@ -17,11 +17,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    _window=[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    _window.backgroundColor=[UIColor grayColor];
-    _myViewController= [[ViewController alloc]init];
-    _window.rootViewController=_myViewController;
-    [_window makeKeyAndVisible];
+    self.window=[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor=[UIColor grayColor];
+    self.myViewController= [[ViewController alloc]init];
+    self.window.rootViewController=self.myViewController;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

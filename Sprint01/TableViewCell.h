@@ -14,6 +14,5 @@
 @property (nonatomic, retain) UILabel *mySubtitleLabel;
 @property (nonatomic, retain) UIImageView *myImageView;
 
--(id)initCell;
 
 @end
