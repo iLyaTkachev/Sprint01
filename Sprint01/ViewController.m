@@ -22,7 +22,7 @@
     self.myTableView = [[self makeTableView]autorelease];
     [self.view addSubview:self.myTableView];
     NSString *path = [[NSBundle mainBundle] pathForResource:@"Data" ofType:@"plist"];
-    self.dataArray = [[NSMutableArray alloc] initWithContentsOfFile:path];
+    self.dataArray = [[[NSMutableArray alloc] initWithContentsOfFile:path]autorelease];
 }
 
 -(UITableView *)makeTableView
@@ -43,6 +43,7 @@
     
     tableView.delegate = self;
     tableView.dataSource = self;
+    [tableView registerClass:[TableViewCell class] forCellReuseIdentifier:@"Cell"];
     
     return tableView;
 }
@@ -59,10 +60,9 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
-    TableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    TableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     if (cell == nil) {
-        cell = [[[TableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+        cell = [[[TableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Cell"] autorelease];
     }
     cell.myTitleLabel.text=[[_dataArray objectAtIndex:indexPath.row] objectForKey:@"title"];
     cell.mySubtitleLabel.text=[[_dataArray objectAtIndex:indexPath.row] objectForKey:@"subtitle"];
@@ -70,8 +70,6 @@
     return cell;
 }
 -(void) dealloc{
-    [self.dataArray release];
-    [self.myTableView release];
     [super dealloc];
 }
 /*

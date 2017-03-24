@@ -22,9 +22,9 @@
 }
 -(void)initCell
 {
-        self.myTitleLabel=[[UILabel alloc]initWithFrame:CGRectMake(100.0f, 0.0f, 200.0f, 25.0f)];
-        self.mySubtitleLabel=[[UILabel alloc]initWithFrame:CGRectMake(100.0f, 25.0f, 200.0f, 25.0f)];
-        self.myImageView=[[UIImageView alloc] initWithFrame:CGRectMake(25.0f,1.0f, 48.0f, 48.0f)];
+        self.myTitleLabel=[[[UILabel alloc]initWithFrame:CGRectMake(100.0f, 0.0f, 200.0f, 25.0f)]autorelease];
+        self.mySubtitleLabel=[[[UILabel alloc]initWithFrame:CGRectMake(100.0f, 25.0f, 200.0f, 25.0f)]autorelease];
+        self.myImageView=[[[UIImageView alloc] initWithFrame:CGRectMake(25.0f,1.0f, 48.0f, 48.0f)]autorelease];
         [self.mySubtitleLabel setTextColor:[UIColor grayColor]];
         [self addSubview:self.myTitleLabel];
         [self addSubview:self.mySubtitleLabel];
@@ -41,9 +41,6 @@
     // Configure the view for the selected state
 }
 -(void) dealloc{
-    [self.myTitleLabel release];
-    [self.mySubtitleLabel release];
-    [self.myImageView release];
     [super dealloc];
 }
 
